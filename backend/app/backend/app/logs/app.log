@@ -1,0 +1,197 @@
+2026-01-23 10:43:07,238 | INFO | TEST_LOGGER | This is an INFO log
+2026-01-23 10:43:07,238 | WARNING | TEST_LOGGER | This is a WARNING log
+2026-01-23 10:43:07,238 | ERROR | TEST_LOGGER | This is an ERROR log
+2026-01-25 19:07:40,570 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in EPC contracts', 'branch': 'Commercial', 'document_name': 'EPC_Contract.pdf'}
+2026-01-25 19:07:40,571 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "C:\Users\SMART\L&T\backend\app\api\routes.py", line 34, in query_epc
+    response = rag_pipeline.query(
+TypeError: RAGPipeline.query() got an unexpected keyword argument 'user_query'
+2026-01-25 19:07:50,433 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in EPC contracts', 'branch': 'Commercial', 'document_name': 'EPC_Contract.pdf'}
+2026-01-25 19:07:50,447 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "C:\Users\SMART\L&T\backend\app\api\routes.py", line 34, in query_epc
+    response = rag_pipeline.query(
+TypeError: RAGPipeline.query() got an unexpected keyword argument 'user_query'
+2026-01-25 19:14:26,655 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in EPC contracts', 'branch': 'Civil', 'document_name': 'EPC_Contract.pdf'}
+2026-01-25 19:14:26,665 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "C:\Users\SMART\L&T\backend\app\api\routes.py", line 34, in query_epc
+    response = rag_pipeline.query(
+TypeError: RAGPipeline.query() got an unexpected keyword argument 'query'
+2026-01-25 19:20:32,149 | INFO | API_ROUTER | Received query request: {'query': 'Explain contracts in terms of EPC', 'branch': 'Civil', 'document_name': 'EPC_Contract.pdf'}
+2026-01-25 19:20:32,154 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "C:\Users\SMART\L&T\backend\app\api\routes.py", line 34, in query_epc
+    response = rag_pipeline.query(
+TypeError: RAGPipeline.query() got an unexpected keyword argument 'query'
+2026-01-25 19:26:31,392 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in EPC contracts', 'branch': 'Commercial', 'document_name': 'EPC_Contract.pdf'}
+2026-01-25 19:26:31,397 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "C:\Users\SMART\L&T\backend\app\api\routes.py", line 35, in query_epc
+    response = rag_pipeline.query(
+TypeError: RAGPipeline.query() got an unexpected keyword argument 'query'
+2026-01-25 19:30:59,871 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in EPC contracts', 'branch': 'Commercial', 'document_name': 'EPC_Contract.pdf'}
+2026-01-25 19:30:59,877 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "C:\Users\SMART\L&T\backend\app\api\routes.py", line 35, in query_epc
+    response = rag_pipeline.query(
+TypeError: RAGPipeline.query() takes from 2 to 3 positional arguments but 4 were given
+2026-01-25 19:35:21,873 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in EPC contracts', 'branch': 'Commercial', 'document_name': 'EPC_Contract.pdf'}
+2026-01-25 19:35:23,077 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "C:\Users\SMART\L&T\backend\app\api\routes.py", line 35, in query_epc
+    response = rag_pipeline.query(
+  File "C:\Users\SMART\L&T\backend\app\services\rag_pipeline.py", line 41, in query
+    answer = self.llm.generate_answer(
+  File "C:\Users\SMART\L&T\backend\app\services\llm_reasoner.py", line 29, in generate_answer
+    output = self.model.generate(
+  File "C:\Users\SMART\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\SMART\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\generation\utils.py", line 2564, in generate
+    result = decoding_method(
+  File "C:\Users\SMART\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\generation\utils.py", line 2781, in _sample
+    model_inputs = self.prepare_inputs_for_generation(input_ids, **model_kwargs)
+  File "C:\Users\SMART\.cache\huggingface\modules\transformers_modules\microsoft\Phi_hyphen_3_hyphen_mini_hyphen_4k_hyphen_instruct\f39ac1d28e925b323eae81227eaba4464caced4e\modeling_phi3.py", line 1291, in prepare_inputs_for_generation
+    past_length = past_key_values.seen_tokens
+AttributeError: 'DynamicCache' object has no attribute 'seen_tokens'
+2026-01-25 19:51:30,026 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in EPC contracts', 'branch': None, 'document_name': None}
+2026-01-25 21:22:07,482 | INFO | API_ROUTER | Query processed successfully
+2026-01-26 21:46:16,632 | INFO | API_ROUTER | Received query request: {'query': 'Explain the payment terms in EPC contracts', 'branch': None, 'document_name': 'EPC_Contract.pdf'}
+2026-01-26 21:46:16,688 | INFO | API_ROUTER | Query processed successfully
+2026-01-26 21:47:26,337 | INFO | API_ROUTER | Received query request: {'query': 'What is the scope of work defined under this EPC agreement', 'branch': None, 'document_name': 'EPC_Contract.pdf'}
+2026-01-26 21:47:26,348 | INFO | API_ROUTER | Query processed successfully
+2026-01-26 21:48:16,221 | INFO | API_ROUTER | Received query request: {'query': "What does 'Completion Date' mean as per this agreement", 'branch': None, 'document_name': 'EPC_Contract.pdf'}
+2026-01-26 21:48:16,245 | INFO | API_ROUTER | Query processed successfully
+2026-01-26 21:52:18,412 | INFO | API_ROUTER | Received query request: {'query': 'What does Completion Date mean as per this agreement', 'branch': None, 'document_name': None}
+2026-01-26 21:52:18,431 | INFO | API_ROUTER | Query processed successfully
+2026-01-26 21:55:30,841 | INFO | API_ROUTER | Received query request: {'query': 'Explain the meaning of the term Completion Date mean as per this EPC agreement', 'branch': None, 'document_name': 'EPC_Contract.pdf'}
+2026-01-26 21:55:30,864 | INFO | API_ROUTER | Query processed successfully
+2026-01-26 22:02:32,991 | INFO | API_ROUTER | Received query request: {'query': 'Explain the meaning of the term Completion Date mean as per this EPC agreement', 'branch': None, 'document_name': 'EPC_Contract.pdf'}
+2026-01-26 22:02:33,030 | INFO | API_ROUTER | Query processed successfully
+2026-01-26 22:12:38,304 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contracts', 'branch': 'Commercial', 'document_name': 'EPC_Contract.pdf'}
+2026-01-26 22:12:38,340 | INFO | API_ROUTER | Query processed successfully
+2026-01-26 22:15:11,224 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contracts', 'branch': 'Commercial', 'document_name': 'EPC_Contract.pdf'}
+2026-01-26 22:15:11,226 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "D:\L&T - Copy 2\backend\app\api\routes.py", line 35, in query_epc
+    response = rag_pipeline.query(
+TypeError: RAGPipeline.query() missing 1 required positional argument: 'document_name'
+2026-01-26 22:15:33,575 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contracts', 'branch': None, 'document_name': 'EPC_Contract.pdf'}
+2026-01-26 22:15:33,576 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "D:\L&T - Copy 2\backend\app\api\routes.py", line 35, in query_epc
+    response = rag_pipeline.query(
+TypeError: RAGPipeline.query() missing 1 required positional argument: 'document_name'
+2026-01-27 09:31:57,484 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contacts', 'branch': 'Commercial', 'document_name': 'EPC_Contact.pdf'}
+2026-01-27 09:31:57,571 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 09:37:51,858 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contacts', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 09:37:51,896 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 09:43:50,302 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contacts', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 09:43:50,334 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:06:12,890 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contract', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:06:55,946 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:08:31,179 | INFO | API_ROUTER | Received query request: {'query': 'Are there any penalties for late payments', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:08:51,116 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:10:19,189 | INFO | API_ROUTER | Received query request: {'query': 'What this agreement is about', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:10:26,771 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:11:25,228 | INFO | API_ROUTER | Received query request: {'query': 'What is the given pdf about', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:11:57,092 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:15:52,449 | INFO | API_ROUTER | Received query request: {'query': 'Explain EPC Contracts', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:16:13,192 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:18:12,247 | INFO | API_ROUTER | Received query request: {'query': 'Explain the NH Centrally Sponsored Road Work Project in the given document in detail with respect to EPC  ', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:18:58,585 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:20:25,037 | INFO | API_ROUTER | Received query request: {'query': 'What does Defects Liability Period mean in terms of EPC', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:20:56,779 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:21:43,171 | INFO | API_ROUTER | Received query request: {'query': 'What is the scope of the project under this EPC contract', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:22:18,539 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:22:49,855 | INFO | API_ROUTER | Received query request: {'query': 'Is any advance payment allowed to the contractor', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:23:33,319 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:28:11,977 | INFO | API_ROUTER | Received query request: {'query': 'Can force majeure events affect the completion date', 'branch': 'Civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:28:34,448 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 10:31:58,553 | INFO | API_ROUTER | Received query request: {'query': 'Provide a high-level summary of this EPC agreement.', 'branch': 'Civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 10:32:28,732 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 11:00:18,954 | INFO | API_ROUTER | Received query request: {'query': 'Provide top level summary from this document', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 11:00:19,022 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 11:00:46,344 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Cntract', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 11:00:46,371 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 11:02:56,378 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contract', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 11:03:39,061 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 11:14:57,336 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given documnet', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 11:15:11,871 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 11:17:20,624 | INFO | API_ROUTER | Received query request: {'query': 'Is advance payments allowed in EPC Contracts', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 11:17:45,350 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 11:40:04,128 | INFO | API_ROUTER | Received query request: {'query': 'Explain in detail the summary of given EPC Document', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 11:40:04,166 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "D:\L&T - Copy 2\backend\app\api\routes.py", line 35, in query_epc
+    response = rag_pipeline.query(
+  File "D:\L&T - Copy 2\backend\app\services\rag_pipeline.py", line 127, in query
+    answer = self.llm.generate_raw(prompt)
+AttributeError: 'LLMReasoner' object has no attribute 'generate_raw'. Did you mean: 'generate_answer'?
+2026-01-27 11:47:52,239 | INFO | API_ROUTER | Received query request: {'query': 'Explain in detail the summary of given EPC Document', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 11:48:32,266 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 11:51:01,310 | INFO | API_ROUTER | Received query request: {'query': 'Explain the authority involved of given EPC Document', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 11:51:33,250 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 14:26:29,076 | INFO | API_ROUTER | Received query request: {'query': 'What does Clause 10 say about advance payment?', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 14:26:29,146 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 14:27:09,561 | INFO | API_ROUTER | Received query request: {'query': 'What is meant by advance payment?', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 14:27:09,588 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 14:29:46,147 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contract', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 14:29:46,228 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 14:56:31,218 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the EPC agreement', 'branch': 'Civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 14:56:31,321 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 14:57:02,718 | INFO | API_ROUTER | Received query request: {'query': 'According to the document, is advance payment allowed?', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 14:57:02,752 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 14:57:45,131 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contract', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 14:58:27,874 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 14:59:16,065 | INFO | API_ROUTER | Received query request: {'query': 'Are there penalties for late payment', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 14:59:33,109 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 15:00:20,126 | INFO | API_ROUTER | Received query request: {'query': 'What are the fields EPC are applicable', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 15:01:02,236 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 15:02:15,325 | INFO | API_ROUTER | Received query request: {'query': 'What is EPC', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 15:02:28,521 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 15:48:32,236 | INFO | API_ROUTER | Received query request: {'query': 'What is EPC', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 15:48:45,778 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 15:49:22,800 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given document', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 15:49:22,827 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 15:49:49,061 | INFO | API_ROUTER | Received query request: {'query': 'What is the scope of  given document', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 15:50:20,607 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 15:50:46,889 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given document', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 15:50:46,914 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 16:12:38,636 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given document', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 16:12:38,688 | ERROR | API_ROUTER | Error while processing EPC query
+Traceback (most recent call last):
+  File "D:\L&T - Copy 2\backend\app\api\routes.py", line 35, in query_epc
+    response = rag_pipeline.query(
+  File "D:\L&T - Copy 2\backend\app\services\rag_pipeline.py", line 71, in query
+    top_k=40 if summary else 12
+UnboundLocalError: local variable 'summary' referenced before assignment
+2026-01-27 16:17:32,518 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given document', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 16:17:56,650 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 16:25:03,966 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given document', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 16:25:04,030 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 16:27:17,009 | INFO | API_ROUTER | Received query request: {'query': 'Are there penalties for late payments', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 16:27:34,232 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 16:28:36,631 | INFO | API_ROUTER | Received query request: {'query': 'Explain EPC for electronics department', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 16:29:17,089 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 16:32:52,769 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given document', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 16:32:52,831 | INFO | API_ROUTER | Query processed successfully
+2026-01-27 16:33:21,055 | INFO | API_ROUTER | Received query request: {'query': 'Explain the concept given document', 'branch': 'Commercial', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-27 16:34:03,905 | INFO | API_ROUTER | Query processed successfully
+2026-01-28 06:13:32,238 | INFO | API_ROUTER | Received query request: {'query': 'Is advance payment allowed to the contractor', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-28 06:14:10,865 | INFO | API_ROUTER | Query processed successfully
+2026-01-28 06:15:28,017 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given document', 'branch': 'civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-28 06:15:49,826 | INFO | API_ROUTER | Query processed successfully
+2026-01-28 06:38:04,118 | INFO | API_ROUTER | Received query request: {'query': 'Are advanced payments allowed in EPC Contracts', 'branch': 'Civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-28 06:38:10,759 | INFO | API_ROUTER | Query processed successfully
+2026-01-28 06:38:55,992 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given documnet', 'branch': 'Civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-28 06:38:56,016 | INFO | API_ROUTER | Query processed successfully
+2026-01-28 06:39:25,173 | INFO | API_ROUTER | Received query request: {'query': 'Who is the authority in the given document', 'branch': 'Civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-28 06:39:30,949 | INFO | API_ROUTER | Query processed successfully
+2026-01-28 06:40:14,067 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the given document', 'branch': 'Civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-28 06:40:14,085 | INFO | API_ROUTER | Query processed successfully
+2026-01-28 10:33:26,165 | INFO | API_ROUTER | Received query request: {'query': 'Summarize the EPC agreement', 'branch': 'Civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-28 10:33:26,232 | INFO | API_ROUTER | Query processed successfully
+2026-01-28 10:33:56,528 | INFO | API_ROUTER | Received query request: {'query': 'Explain payment terms in terms of EPC Contracts', 'branch': 'Civil', 'document_name': 'Revised_standard_EPC_Agreement_for_NH_and_Centrally_sponsored_road_works_proposed_to_be_implemented_on_EPC.pdf'}
+2026-01-28 10:33:56,559 | INFO | API_ROUTER | Query processed successfully
